@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 // const mongoDbClient = require("mongodb").MongoClient
 // const mongoURI = 'mongodb://<!#@!#@>:"!@!@"@merncluster-shard-00-00.d1d4z.mongodb.net:27017,merncluster-shard-00-01.d1d4z.mongodb.net:27017,merncluster-shard-00-02.d1d4z.mongodb.net:27017/Customer?ssl=true&replicaSet=atlas-eusy5p-shard-0&authSource=admin&retryWrites=true&w=majority' // Customer change url to your db you created in atlas
-const  mongoURI ='mongodb+srv://shashank:shashank@cluster0.2eh8gea.mongodb.net/?retryWrites=true&w=majority'
+const  mongoURI ='mongodb+srv://zish0106:0106@cluster0.mywg5qr.mongodb.net/?retryWrites=true&w=majority'
 // mongodb://<username>:<password>@merncluster-shard-00-00.d1d4z.mongodb.net:27017,merncluster-shard-00-01.d1d4z.mongodb.net:27017,merncluster-shard-00-02.d1d4z.mongodb.net:27017/?ssl=true&replicaSet=atlas-eusy5p-shard-0&authSource=admin&retryWrites=true&w=majority'
 module.exports = function (callback) {
     mongoose.connect(mongoURI, { useNewUrlParser: true }, async (err, result) => {
