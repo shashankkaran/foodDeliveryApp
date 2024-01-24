@@ -37,6 +37,7 @@ export default function Cart() {
       dispatch({ type: "DROP" })
     }
   }
+  //changes
 
   let totalPrice = data.reduce((total, food) => total + food.price, 0)
   return (
